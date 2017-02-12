@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tool_bar"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="במסך רשימת מטופלים, אתר את המטופל לו מבוצעת הקבלה:"/>
+
+                <ImageButton
+                    android:id="@+id/img1"
+                    android:src="@drawable/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:text="
+לפתיחת תיק המטופל, לחץ על מספר הזיהוי שלו - התקבל במשרד הקבלה  (אם בוצעה כבר קבלה רפואית, לחץ על מספר הזיהוי של המטופל). יוצג חלון פרטי גיליון:
+"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView" />
+
+                <ImageButton
+                    android:id="@+id/img2"
+                    android:src="@drawable/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="עדכן את הפרטים הרלוונטיים, ולחץ על אשר . יוצג תיק המטופל:"/>
+                <ImageButton
+                    android:id="@+id/img3"
+                    android:src="@drawable/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="למעבר לגיליון הקבלה, לחץ על קבלה
+למעבר לחוצץ הסיעוד, לחץ על סיעוד . יוצגו רכיבי הקבלה הסיעודית
+"/>
+                <ImageButton
+                    android:id="@+id/img4"
+                    android:src="@drawable/img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>
